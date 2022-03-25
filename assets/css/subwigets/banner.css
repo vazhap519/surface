@@ -1,0 +1,17 @@
+#bannerArea{
+    height: 300px;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+}
+#bannerArea p{
+    font-size: 36px;
+    font-family:'Raleway-Heavy' ;
+    width: 110px;
+    height: auto;
+    text-transform: uppercase;
+    margin-top: 110px;
+    margin-left: 145px;
+    display: inline-block;
+    color: #000;
+    font-weight: bolder;
+}

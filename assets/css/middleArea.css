@@ -1,8 +1,8 @@
-@import url(./widgetArea.css);
+
+@import url(./products/newproduct.css);
 .middleArea{
     position: relative;
-    background-color: orange;
-    height: 100vh;
+    height: auto;
     top: 50px;
     left: 15px;
 

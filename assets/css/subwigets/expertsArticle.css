@@ -1,0 +1,40 @@
+#expertArticles{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #fff;
+}
+#expertArticles h1{
+    font-size: 24px;
+    font-family:'Roboto-BoldItalic' ;
+    padding-top: 30px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+#expertArticles ul{
+    list-style: none;
+    font-family:'Roboto-Regular' ;
+    font-size: 14px;
+    overflow: hidden;
+    height: 350px;
+
+}
+#expertArticles ul li{
+    margin-top: 20px;
+}
+#expertArticles ul li a{
+    color: #333;
+    font-family:'Roboto-Regular' ;
+    font-size: 14px;
+}
+
+.ExpertsLink{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-family:'Roboto-BlackItalic' ;
+margin-left: 30px;
+font-weight: bolder;
+}

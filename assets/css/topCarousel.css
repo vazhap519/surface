@@ -45,7 +45,11 @@ list-style: none;
 }
 ul.carusel_dots >li:nth-child(1){
     margin-left: 0px;
-    background-color: blue;
+   
+}
+
+.activeDot{
+    background-color: #fb4d01!important;
 }
 ul.carusel_dots >li{
     width: 40px;
@@ -54,6 +58,8 @@ ul.carusel_dots >li{
     background-color: yellow;
     border: 1px;
 }
+
+
 
 .carousel_article{
     width: 300px;

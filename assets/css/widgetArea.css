@@ -1,25 +1,12 @@
+@import url(./subwigets/navigation.css);
+@import url(./subwigets/banner.css);
+@import url(./subwigets/tags.css);
+@import url(./subwigets/expertsArticle.css);
+
 #wgetArea{
     width: 270px;
-    height: 100vh;
-    background-color: aqua;
+    height: auto;
     max-width: 100%;
     padding-left: 0!important;
 }
 
-.navigation{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 270px;
-    height: auto;
-    padding-left: 0!important;
-}
-
-.navigation h1{
-    padding: 0;
-    margin: 0;
-    background-color: #333333;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-}

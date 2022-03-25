@@ -1,5 +1,6 @@
-@import url(./logo.css);
-@import url(./social_icons.css);
+@import url(./header/logo.css);
+@import url(./header/social_icons.css);
+@import url(./header/languageSwitcher.css);
 #header{
     width: 100%;
     height: auto;

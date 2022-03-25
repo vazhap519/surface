@@ -1,0 +1,57 @@
+#newProductsArea{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+#newProductsArea .newProductsAreaTop{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline ;
+}
+#newProductsArea .newProductsAreaTop h1{
+    color: #707070;
+    font-family:'Roboto-BlackItalic' ;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.newProductsArrows{
+    width: 60px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-content: baseline;
+
+}
+.newProductsArrows .newProductsArrows_left, .newProductsArrows_right{
+    height: 30px;
+    background-color: red;
+
+}
+.newProductsArrows_right{
+    transform: rotate(187deg);
+    margin-left: 60px;
+    margin-top: -11px;
+
+}
+.newProductsArrows .newProductsArrows_left:after{
+    position: absolute;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    top: -4px;
+}
+.newProductsArrows .newProductsArrows_right:after{
+    position: absolute;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    /* transform: rotate(175deg);
+    /* left: 40px; */
+    /* top: -4px; */ 
+}

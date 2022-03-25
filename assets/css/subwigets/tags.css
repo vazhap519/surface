@@ -1,0 +1,52 @@
+#tagsWidgets{
+    height: auto;
+    background-color:#fff;
+    position: relative;
+    margin-top: 30px
+}
+#tagsWidgets h1{
+    font-family:'Roboto-BoldItalic' ;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 30px;
+    /* margin-bottom: 20px; */
+}
+
+#tagsWidgets .tagsCloud{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+
+}
+#tagsWidgets .tagsCloud li{
+ padding: 10px;
+background-color:#e9e9e9;
+ font-size: 14px;
+ margin-top: 10px;
+ margin-right: 10px;
+}
+#tagsWidgets .tagsCloud li:hover{
+    background-color: #faef03;
+}
+#tagsWidgets .tagsCloud li a{
+    text-transform: capitalize;
+    font-family:'Roboto-Regular' ;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+.tags_view{
+    display: block;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Roboto-BlackItalic';
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+}
