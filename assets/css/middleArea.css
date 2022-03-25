@@ -1,0 +1,9 @@
+@import url(./widgetArea.css);
+.middleArea{
+    position: relative;
+    background-color: orange;
+    height: 100vh;
+    top: 50px;
+    left: 15px;
+
+}

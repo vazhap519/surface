@@ -1,0 +1,11 @@
+select#language_switcher {
+    background: transparent;
+    color: #fff;
+    width: 78px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+}
+select#language_switcher option{
+    background-color: transparent!important;
+}

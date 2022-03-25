@@ -1,0 +1,50 @@
+@import url(./languageSwitcher.css);
+.social_icons {
+    list-style: none;
+    display: flex;
+    margin-top: 25px;
+}
+.social_icons li{
+margin-left: 10px;
+margin-top: 4px;
+}
+.social_icons li:last-child{
+    margin-right: 10px;
+}
+.after_fb::after{
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    content: "\f09a";
+    color: #fff;
+
+}
+.after_tw::after{
+    content: '\f099';
+    color: #fff;
+      font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+.after_yo::after{
+    content: '\f167';
+    color: #fff;
+      font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+.after_pi::after{
+    content: "\f0d2";
+    color: #fff;
+      font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+.after_in::after{
+    content: '\f16d';
+    color: #fff;
+      font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+

@@ -1,0 +1,52 @@
+/* @import url(./assets/css/bootstrap.css);
+@import url(./assets/css/font-awesome.css);
+@import url(./assets/css/topCarousel.css);
+@import url(./assets/css/content.css);
+@import url(./assets/css/fonts.css); */
+
+@media  (min-width: 300px) and (max-width:576px) { 
+  
+
+    .carousel_article {
+      
+        margin-left: 25px;
+    width: 220px;
+    top: 250px;
+
+    }
+
+    .carousel_article .carousel_article_content h1{
+        font-size: 25px;
+    }
+    .carousel_article .carousel_article_content p{
+        font-size: 16px;
+    }
+
+    ul.carusel_dots {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        width: 140px;
+        bottom: 100px;
+        padding: 0!important;
+        left: 55px;
+    }
+
+    .TopCarousel_Arrows {
+        position: absolute;
+        width: auto;
+        height: 55px;
+        right: 125px;
+        top: 390px;
+    }
+ }
+/* @media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... } */
