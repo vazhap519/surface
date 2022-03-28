@@ -54,3 +54,41 @@
                                         END TOP CAROUSELL
 ========================================================================================================
 **/
+var NewProductsCarousellRight=document.querySelector('.newProductsArrows_right');
+var NewProductsCarousellLeft=document.querySelector('.newProductsArrows_left');
+var newProductContentArea=document.querySelector('.newProductContentArea');
+var newProductContentArea_childs=newProductContentArea.children;
+
+
+NewProductsCarousellRight.addEventListener('click',function(){
+    newProductContentArea.scrollLeft += 125;
+})
+
+NewProductsCarousellLeft.addEventListener('click',function(){
+    newProductContentArea.scrollLeft -= 125;
+})
+const maxScroll=newProductContentArea.scrollWidth-newProductContentArea.clientWidth;
+function Auto(){
+    if(newProductContentArea.scrollWidth < (maxScroll-1)){
+        newProductContentArea.scrollLeft -= 295;
+    }else{
+        newProductContentArea.scrollLeft += 1;
+    }
+}
+let avtoPlay=setInterval(Auto,80);
+
+for(var i=0;i<newProductContentArea_childs.length;i++){
+    newProductContentArea_childs[i].addEventListener('mousedown',()=>{
+        clearInterval(avtoPlay)
+    });
+    newProductContentArea_childs[i].addEventListener('mouseup',()=>{
+        return setInterval(Auto,80)
+    })
+    
+
+}
+/** 
+========================================================================================================
+                                        END NEW CAROUSELL
+========================================================================================================
+**/
