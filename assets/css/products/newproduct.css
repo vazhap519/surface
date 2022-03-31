@@ -60,39 +60,51 @@ font-size: 25px;
 
 
 .newProductContentArea{
-    
+    position: relative;
     height: 675px;
     width: 865px;
     max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+  overflow-X: auto;
     list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   background-color: #e24602;
+display: flex;
+flex-direction: column;
+scroll-behavior: smooth;
 }
 
+
 .newProductContentArea::-webkit-scrollbar{
- display: block;
+ display: none;
 }
+/* .newProductContentAreaTop{
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior:auto;
+} */
+.newProductContentAreaTop, .newProductContentAreaBottom::-webkit-scrollbar{
+    display: none;
+   }
+/* .newProductContentAreaBottom{
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: auto;
+} */
 .newProductContentArea li:first-child{
     margin-left: 0;
 }
 .newProductContentArea li{
-    width: 270px;
+    width: 250px;
     height: 315px;
     background-color: #fff;
-    /* position: relative; */
-     margin-bottom: 25px; 
+     position: relative; 
+ margin-left: 25px;
+ margin-top: 15px;
 }
 .newProductContentArea li >img{
-    /* position: absolute; */
-    width: 270px;
+  
+    width: 100%;
     height: 235px;
     margin: auto;
     display: inline-block;
@@ -100,6 +112,7 @@ font-size: 25px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
+ 
 }
 
     .NewProdact_ico {
@@ -213,4 +226,24 @@ padding-top: 20px;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
+}
+
+
+ .newProductContentAreaTop{
+    list-style: none;
+    padding: 0;
+ 
+ }
+ .newProductContentAreaTop:first-child{
+     margin-left: 0;
+ }
+ 
+ 
+ .newProductContentAreaBottom {
+    list-style: none;
+    padding: 0;
+
+}
+.newProductContentAreaBottom:first-child{
+    margin-left: 0;
 }
