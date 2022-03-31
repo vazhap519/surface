@@ -1,0 +1,22 @@
+#TopProductsArea{
+    height: 365px;
+    margin-top: 75px;
+    width: 865px;
+    max-width: 100%;
+}
+#TopProductsArea .TopProductsAreaTop h1{
+    font-family:'Roboto-BlackItalic' ;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #717171;
+}
+#TopProductsArea .TopProductsAreaTop .TopProductsAreaArrows{
+    display: flex;
+}
+#TopProductsArea .TopProductsAreaTop .TopProductsAreaArrows span:after{
+    position: absolute;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}

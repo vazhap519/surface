@@ -1,5 +1,6 @@
 
 @import url(./products/newproduct.css);
+@import url(./products/topproduct.css);
 .middleArea{
     position: relative;
     height: auto;
