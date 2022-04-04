@@ -1,22 +1,154 @@
-#TopProductsArea{
-    height: 365px;
-    margin-top: 75px;
-    width: 865px;
-    max-width: 100%;
+.TopProductsArea{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 70px;
 }
-#TopProductsArea .TopProductsAreaTop h1{
-    font-family:'Roboto-BlackItalic' ;
-    font-size: 22px;
-    text-transform: uppercase;
+.topProductHeaderArea{
+    height: auto;
+    
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.topProductHeaderArea h1{
     color: #717171;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family:'Roboto-Italic' ;
 }
-#TopProductsArea .TopProductsAreaTop .TopProductsAreaArrows{
+.topProductsArrows{
+   
+    height: 30px;
     display: flex;
 }
-#TopProductsArea .TopProductsAreaTop .TopProductsAreaArrows span:after{
+.topProductsArrows .topProductsArrows__left{
+width: 15px;
+height: 15px;
+position: relative;
+font-size: 25px;
+}
+.topProductsArrows .topProductsArrows__left::after{
     position: absolute;
     content: "\f053";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
+}
+.topProductsArrows .topProductsArrows__right{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    font-size: 25px;
+}
+.topProductsArrows .topProductsArrows__right::after{
+position: absolute;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    transform: rotate(180deg);
+    top: -4px;
+    left: 5px;
+    
+}
+
+.TopProductsArea__content{
+    margin-top: 35px;
+    height: 320px;
+    width: 100%;
+  overflow: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+.TopProductsArea__content__box{
+    width: 270px;
+    max-width: 100%;
+    position: relative;
+    height: 320px;
+    background-color: #fff;
+    margin-left: 30px;
+}
+.TopProductsArea__content__box:first-child{
+    margin-left: 0;
+}
+.TopProductsArea__content__box img{
+    width: 100%;
+    height: 230px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ 
+}
+
+.TopProductsArea__content__box__content{
+    width: 270px;
+    max-width: 100%;
+ padding: 0;
+ margin: 0;
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.TopProductsArea__content__box__content a{
+    font-family:'Roboto-Italic' ;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 1.8;
+   
+width: 50%;
+text-decoration: none;
+padding-top: 25px;
+}
+.TopProductsArea__content__box__content_prices{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    padding-top: 25px;
+}
+
+.TopProductsArea__content__box__content_prices_discount::before{
+    position: absolute;
+    content: "\f153";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.TopProductsArea__content__box__content_prices_discount{
+    font-family:'Roboto-BlackItalic' ;
+    font-size: 18px;
+    position: relative;
+
+
+}
+.TopProductsArea__content__box__content_prices_discount_numbers{
+margin-left: 10px;
+}
+.TopProductsArea__content__box__content_prices_fixed{
+    font-family: 'Roboto-BlackItalic';
+    font-size: 18px;
+    color: #fe0000;
+    padding-left: 18px!important;
+    margin: 0;
+    padding: 0;
+   
+    font-weight: bolder;
+}
+.TopProductsArea__content__box__content_prices_fixed::before{
+    position: absolute;
+    content: "\f153";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+.TopProductsArea__content__box__content_prices_fixed_number{
+    margin-left: 10px;
 }

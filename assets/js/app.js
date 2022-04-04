@@ -80,3 +80,27 @@ NewProductsCarousellLeft.addEventListener('click',function(){
                                         END NEW CAROUSELL
 ========================================================================================================
 **/
+
+var topProducts=document.querySelector('.TopProductsArea__content');
+var topProductsLeft=document.querySelector('.topProductsArrows__left');
+var topProductsRight=document.querySelector('.topProductsArrows__right');
+var topProductsBoxes=document.getElementsByClassName('.TopProductsArea__content__box');
+var topProductsSize=topProducts.scrollWidth-topProducts.clientWidth;
+
+topProductsRight.addEventListener('click',topProductsRight_f)
+function topProductsRight_f(){
+    topProducts.scrollLeft+=125
+  
+}
+topProductsLeft.addEventListener('click',topProductsLetf_f)
+function topProductsLetf_f(){
+    topProducts.scrollLeft-=125
+}
+
+function topProductsAuto(){
+ if(topProducts.scrollLeft> topProductsSize-1){
+    topProducts.scrollLeft-=125
+ }
+}
+let topInterval=setInterval(topProductsAuto,50)
+topInterval()
