@@ -1,0 +1,28 @@
+.brandsArea{
+    list-style: none;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    height: auto;
+}
+.brandsArea li{
+    width: 115px;
+    height: 30px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-left: 30px;
+}
+.brandsArea li:first-child{
+    margin-left: 0;
+}
+.brandsArea li a{
+    width: 100%;
+    text-decoration: none;
+
+}
+.brandsArea li a img{
+    width: 115px;
+    height: 30px;
+}

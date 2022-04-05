@@ -26,7 +26,6 @@
         }
         TopSlideDots[counter].classList.add("activeDot")
     }
-
     function LeftTopSlide(){
       
         for(var i=0;i<TopSlideItems.length;i++){
@@ -58,8 +57,7 @@ var NewProductsCarousellRight=document.querySelector('.newProductsArrows_right')
 var NewProductsCarousellLeft=document.querySelector('.newProductsArrows_left');
 var newProductContentArea=document.querySelector('.newProductContentArea');
 var newProductContentArea_childs=document.querySelector('.newProductContentArea').children;
-
-const maxWidth=newProductContentArea.scrollLeft-newProductContentArea_childs.clientWidth;
+var maxWidth=newProductContentArea.scrollWidth-newProductContentArea.clientWidth;
 NewProductsCarousellRight.addEventListener('click',function(){
     newProductContentArea.scrollLeft += 125;
     if(newProductContentArea.scrollLeft>(maxWidth-1)){
@@ -73,7 +71,15 @@ NewProductsCarousellLeft.addEventListener('click',function(){
         newProductContentArea+=125
     }
 })
-
+var npl=autoplayNew();
+var autoplayNewp=setInterval("npl",3000);
+function autoplayNew(){
+    if(newProductContentArea.scrollWidth>(maxWidth-1)){
+        newProductContentArea-=maxWidth;
+    }else{
+        newProductContentArea+=1;
+    }
+}
 
 /** 
 ========================================================================================================
@@ -102,4 +108,34 @@ function topProductsAuto(){
     topProducts.scrollLeft-=125
  }
 }
+
+/** 
+========================================================================================================
+                                        END TOP PRODUCTS  CAROUSELL
+========================================================================================================
+**/
+
+
+
+var SaleProtucts=document.querySelector('.saleProductsArea__content'),
+        SaleProtucts__left=document.querySelector('.saleProductsAreaTopArrows__left'),
+        SaleProtucts__Right=document.querySelector('.saleProductsAreaTopArrows__right'),
+        SaleProtucts__Max=SaleProtucts.scrollWidth-SaleProtucts.clientWidth;
+
+        function SaleProtucts_R(){
+            SaleProtucts.scrollLeft += 125;
+      
+        }
+        function SaleProtucts_L(){
+            SaleProtucts.scrollLeft -= 125;
+        }
+        SaleProtucts__Right.addEventListener('click',SaleProtucts_R),
+        SaleProtucts__left.addEventListener('click',SaleProtucts_L);
+        // setInterval(function(){
+        //     if(SaleProtucts.scrollLeft>(SaleProtucts__Max-1)){
+        //         SaleProtucts -=125;
+        //     }else{
+        //         SaleProtucts+=1
+        //     }
+        // },1000)
 

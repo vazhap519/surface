@@ -40,7 +40,7 @@ list-style: none;
     width: 140px;
     bottom: 55px;
     padding: 0!important;
- left: 680px;
+ left: 975px;
 
 }
 ul.carusel_dots >li:nth-child(1){
@@ -66,8 +66,8 @@ ul.carusel_dots >li{
     height: 280px;
  color: yellow;
     position: relative;
-    /* z-index: 40; */
-    margin-left: 700px;
+    z-index: 40;
+    margin-left:980px;
 top: 290px;
 display: inline-block;
 }
