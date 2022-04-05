@@ -102,5 +102,4 @@ function topProductsAuto(){
     topProducts.scrollLeft-=125
  }
 }
-let topInterval=setInterval(topProductsAuto,50)
-topInterval()
+
