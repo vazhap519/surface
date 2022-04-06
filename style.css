@@ -7,6 +7,10 @@
 @import url(./assets/css/shopingArea.css);
 @import url(./assets/css/middleArea.css);
 @import url(./assets/css/widgetArea.css);
+@import url(./assets/css/social/instagram.css);
+@import url(./assets/css/social/socialshare.css);
+@import url(./assets/css/footer.css);
+
 body{
     background-color: #f8f8f8;
 }
