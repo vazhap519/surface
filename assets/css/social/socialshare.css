@@ -1,0 +1,63 @@
+.shareSocials{
+    list-style: none;
+    display: flex;
+margin-top: 60px;
+padding: 0;
+}
+.shareSocials li{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    /*padding-left: 190px;
+    padding-right: 190px; */
+
+}
+
+.shareSocials li a{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 190px;
+    padding-right: 190px;
+    font-size: 30px;
+    color: #fff;
+}
+.shareSocials li a:hover{
+    color: #fff;
+    transform: scale(2, 0.5); /* Equal to scaleX(2) scaleY(0.5) */
+  transform-origin: left;
+    transition: all 0.5ms;
+}
+#fb{
+    background-color: #3b5997;
+}
+
+
+#fb a::after{
+    content: "\f09a";
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+}
+
+#twitt{
+    background-color: #3fccfd;
+}
+
+#twitt a::after{
+    content: "\f099";
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+}
+
+#pint{
+    background-color: #cb2027;
+}
+#pint a::after{
+    content: "\f0d2";
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+}

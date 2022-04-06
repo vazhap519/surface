@@ -3,7 +3,7 @@
 @import url(./products/topproduct.css);
 @import url(./products/saleproducts.css);
 @import url(./products/brands.css);
-@import url(./social/instagram.css);
+
 .middleArea{
     position: relative;
     height: auto;

@@ -68,13 +68,13 @@ NewProductsCarousellRight.addEventListener('click',NewProduct_R);
 NewProductsCarousellLeft.addEventListener('click',NewProduct_l);
 
 function autosTartNewProducts(){
-    if(newProductContentArea.scrollLeft>NewProductsmaxWidth){
+    if(newProductContentArea.scrollLeft>(NewProductsmaxWidth-1)){
         newProductContentArea.scrollLeft-=NewProductsmaxWidth;
     }else{
         newProductContentArea.scrollLeft+=1
     }
 }
-var NewProductAutoplay=setInterval(autosTartNewProducts,100)
+var NewProductAutoplay=setInterval(autosTartNewProducts,80)
 
 
 /** 
@@ -100,13 +100,13 @@ function topProductsLetf_f(){
 }
 
 function topProductsAuto(){
- if(topProducts.scrollLeft> topProductsSize){
+ if(topProducts.scrollLeft> (topProductsSize-1)){
     topProducts.scrollLeft-=topProductsSize
  }else{
     topProducts.scrollLeft+=1
  }
 }
-var topinterval=setInterval(topProductsAuto,100)
+var topinterval=setInterval(topProductsAuto,80)
 /** 
 ========================================================================================================
                                         END TOP PRODUCTS  CAROUSELL
@@ -129,12 +129,12 @@ var  SaleProtucts__Max=SaleProtucts.scrollWidth-SaleProtucts.clientWidth;
         SaleProtucts__Right.addEventListener('click',SaleProtucts_R);
         SaleProtucts__left.addEventListener('click',SaleProtucts_L);
         setInterval(function(){
-            if(SaleProtucts.scrollLeft>SaleProtucts__Max){
+            if(SaleProtucts.scrollLeft>(SaleProtucts__Max-1)){
                 SaleProtucts.scrollLeft-=SaleProtucts__Max
             }else{
                 SaleProtucts.scrollLeft+=1
             }
-        },100)
+        },80)
 
 
 var brands=document.querySelector('.brandsArea');
@@ -146,10 +146,22 @@ var brendMax=brands.scrollWidth - brands.clientWidth;
                     brands.scrollLeft+=1;
                 }
             }
-var AutoBrandsPlay=setInterval(autoBrends,100)
+var AutoBrandsPlay=setInterval(autoBrends,80)
 
 /** 
 ========================================================================================================
                                         END BRANDS  CAROUSELL
 ========================================================================================================
 **/
+
+
+var instagrammfeeds=document.querySelector('.instagram__Area_Carousell');
+var instagrammfeedsMaxWidth=instagrammfeeds.scrollWidth-instagrammfeeds.scrollLeft;
+function instagram_f(){
+    if(instagrammfeeds.scrollLeft > instagrammfeedsMaxWidth){
+        instagrammfeeds.scrollLeft-=instagrammfeedsMaxWidth;
+    }else{
+        instagrammfeeds.scrollLeft+=1;
+    }
+}
+var instaAuto=setInterval(instagram_f,80)

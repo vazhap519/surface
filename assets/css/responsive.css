@@ -49,11 +49,20 @@
 @media (min-width: 992px) { ... }
 */
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width:1500px){
     .carousel_article{
         margin-left: 650px;
     }
     ul.carusel_dots{
         left: 650px;
+    }
+  } 
+
+  @media screen and (min-width: 1500px)  and (max-width:1700px){
+    .carousel_article{
+        margin-left: 895px;
+    }
+    ul.carusel_dots{
+        left: 895px;
     }
   } 
