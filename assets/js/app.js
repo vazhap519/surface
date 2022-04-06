@@ -57,29 +57,25 @@ var NewProductsCarousellRight=document.querySelector('.newProductsArrows_right')
 var NewProductsCarousellLeft=document.querySelector('.newProductsArrows_left');
 var newProductContentArea=document.querySelector('.newProductContentArea');
 var newProductContentArea_childs=document.querySelector('.newProductContentArea').children;
-var maxWidth=newProductContentArea.scrollWidth-newProductContentArea.clientWidth;
-NewProductsCarousellRight.addEventListener('click',function(){
-    newProductContentArea.scrollLeft += 125;
-    if(newProductContentArea.scrollLeft>(maxWidth-1)){
-        newProductContentArea-=125
-    }
+var NewProductsmaxWidth=newProductContentArea.scrollWidth-newProductContentArea.clientWidth;
+function NewProduct_R(){
+    newProductContentArea.scrollLeft+=NewProductsmaxWidth;
+}
+function NewProduct_l(){
+    newProductContentArea.scrollLeft-=NewProductsmaxWidth;
+}
+NewProductsCarousellRight.addEventListener('click',NewProduct_R);
+NewProductsCarousellLeft.addEventListener('click',NewProduct_l);
 
-})
-NewProductsCarousellLeft.addEventListener('click',function(){
-    newProductContentArea.scrollLeft -= 125;
-    if(newProductContentArea.scrollLeft<(maxWidth-1)){
-        newProductContentArea+=125
-    }
-})
-var npl=autoplayNew();
-var autoplayNewp=setInterval("npl",3000);
-function autoplayNew(){
-    if(newProductContentArea.scrollWidth>(maxWidth-1)){
-        newProductContentArea-=maxWidth;
+function autosTartNewProducts(){
+    if(newProductContentArea.scrollLeft>NewProductsmaxWidth){
+        newProductContentArea.scrollLeft-=NewProductsmaxWidth;
     }else{
-        newProductContentArea+=1;
+        newProductContentArea.scrollLeft+=1
     }
 }
+var NewProductAutoplay=setInterval(autosTartNewProducts,100)
+
 
 /** 
 ========================================================================================================
@@ -95,20 +91,22 @@ var topProductsSize=topProducts.scrollWidth-topProducts.clientWidth;
 
 topProductsRight.addEventListener('click',topProductsRight_f)
 function topProductsRight_f(){
-    topProducts.scrollLeft+=125
+    topProducts.scrollLeft+=topProductsSize
   
 }
 topProductsLeft.addEventListener('click',topProductsLetf_f)
 function topProductsLetf_f(){
-    topProducts.scrollLeft-=125
+    topProducts.scrollLeft-=topProductsSize
 }
 
 function topProductsAuto(){
- if(topProducts.scrollLeft> topProductsSize-1){
-    topProducts.scrollLeft-=125
+ if(topProducts.scrollLeft> topProductsSize){
+    topProducts.scrollLeft-=topProductsSize
+ }else{
+    topProducts.scrollLeft+=1
  }
 }
-
+var topinterval=setInterval(topProductsAuto,100)
 /** 
 ========================================================================================================
                                         END TOP PRODUCTS  CAROUSELL
@@ -117,25 +115,41 @@ function topProductsAuto(){
 
 
 
-var SaleProtucts=document.querySelector('.saleProductsArea__content'),
-        SaleProtucts__left=document.querySelector('.saleProductsAreaTopArrows__left'),
-        SaleProtucts__Right=document.querySelector('.saleProductsAreaTopArrows__right'),
-        SaleProtucts__Max=SaleProtucts.scrollWidth-SaleProtucts.clientWidth;
-
+var SaleProtucts=document.querySelector('.saleProductsArea__content');
+var SaleProtucts__left=document.querySelector('.saleProductsAreaTopArrows__left');
+var SaleProtucts__Right=document.querySelector('.saleProductsAreaTopArrows__right');
+var  SaleProtucts__Max=SaleProtucts.scrollWidth-SaleProtucts.clientWidth;
         function SaleProtucts_R(){
-            SaleProtucts.scrollLeft += 125;
+            SaleProtucts.scrollLeft += SaleProtucts__Max;
       
         }
         function SaleProtucts_L(){
-            SaleProtucts.scrollLeft -= 125;
+            SaleProtucts.scrollLeft -= SaleProtucts__Max;
         }
-        SaleProtucts__Right.addEventListener('click',SaleProtucts_R),
+        SaleProtucts__Right.addEventListener('click',SaleProtucts_R);
         SaleProtucts__left.addEventListener('click',SaleProtucts_L);
-        // setInterval(function(){
-        //     if(SaleProtucts.scrollLeft>(SaleProtucts__Max-1)){
-        //         SaleProtucts -=125;
-        //     }else{
-        //         SaleProtucts+=1
-        //     }
-        // },1000)
+        setInterval(function(){
+            if(SaleProtucts.scrollLeft>SaleProtucts__Max){
+                SaleProtucts.scrollLeft-=SaleProtucts__Max
+            }else{
+                SaleProtucts.scrollLeft+=1
+            }
+        },100)
 
+
+var brands=document.querySelector('.brandsArea');
+var brendMax=brands.scrollWidth - brands.clientWidth;
+            function autoBrends(){
+                if(brands.scrollLeft>(brendMax-1)){
+                    brands.scrollLeft-=brendMax;
+                }else{
+                    brands.scrollLeft+=1;
+                }
+            }
+var AutoBrandsPlay=setInterval(autoBrends,100)
+
+/** 
+========================================================================================================
+                                        END BRANDS  CAROUSELL
+========================================================================================================
+**/

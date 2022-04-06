@@ -1,0 +1,38 @@
+#instagram__Area{
+    height: 355px;
+    background-color: #eaeaea;
+    position: relative;
+    vertical-align: baseline;
+    margin-top: 50px;
+}
+
+#instagram__Area h1{
+    font-size: 22px;
+    font-family: 'Roboto-BlackItalic';
+    margin: auto;
+    display: inherit;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.instagram__Area_heshteg{
+    font-size: 22px;
+    font-style: italic;
+}
+
+.instagram__Area_heshteg::before{
+    content: '\23';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    /* margin-right: 10px; */
+}
+
+.instagram_area_feed::before{
+    content: '\f16d';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 10px;
+}
