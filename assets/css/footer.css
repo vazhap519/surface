@@ -2,6 +2,9 @@
 background-color: #373737;
 height: auto;
 width: 100%;
+clear: both;
+margin: 0;
+padding: 0;
 }
 
 
@@ -9,6 +12,7 @@ ul.container.footer_Area {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    margin: 0 auto;
 }
 ul.container.footer_Area  li h2{
     display: flex;
