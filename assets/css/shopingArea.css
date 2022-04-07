@@ -107,7 +107,7 @@ color: #ff0101;
     margin-left: 0;
 }
 .middleArea_cart_content_Products_Area_table_img{
-    width: 90px;
+    width: 70px;
     height: 110px;
 }
 .middleArea_cart_content_Products_Area_table_tr{
@@ -119,7 +119,7 @@ color: #ff0101;
     display: flex;
 }
 .middleArea_cart_content_Products_Area_table_td_content{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .middleArea_cart_content_Products_Area_table_td_content_text{
     width: 185px;
@@ -135,6 +135,7 @@ color: #ff0101;
 .middleArea_cart_content_Products_Area_table_td_content .middleArea_cart_content_Products_Area_table_td_content_text p{
     font-family:'Roboto-Bold' ;
     font-size: 12px;
+    padding-right: 15px;
 
 }
 .middleArea_cart_content_Products_Area_table_td_content_social {
@@ -176,4 +177,68 @@ color: #ff0101;
     font-family: 'FontAwesome';
     font-size: 20px;
     content: "\f0d2";
+}
+
+
+
+
+.middleArea_cart_content_Products_Area_table_td_price_content{
+    font-size: 14px;
+    font-family:'Roboto-Regular' ;
+}
+.middleArea_cart_content_Products_Area_table_td_price_content::before{
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    content: "\f153";
+}
+
+
+.middleArea_cart_content_Products_Area_table_td_qty_content{
+    background-color: yellow;
+    display: flex;
+    height: 40px;
+    margin-left: 35px;
+}
+
+
+
+
+.qty_left_arr{
+    width: 10px;
+    height: 20px;
+    background-color: aqua;
+    margin-top: 15px;
+
+}
+
+.qty_right_arr{
+    width: 10px;
+    height: 20px;
+    background-color: aqua;
+    margin-top: 15px;
+
+}
+.product_quantiy{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.qty_right_arr::after{
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    content: "\f054";
+}
+.qty_left_arr::before{
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    content: "\f053";
 }
